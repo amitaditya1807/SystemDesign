@@ -33,5 +33,10 @@ namespace RateLimiterDemo.Storage
 
             return _instance;
         }
+
+        public void Save(string userId, DateTime time)
+        {
+            _instance.Requests[userId].Add(time);
+        }
     }
 }

@@ -39,12 +39,12 @@ namespace RateLimiterDemo.RateLimiter
                     if (_counter >= _maxRequests)
                         return false;
 
-                    _storage.Requests[userId].Add(DateTime.UtcNow);
+                    _storage.Save(userId, DateTime.UtcNow);
                     _counter++;
                     return true;
                 }
 
-                _storage.Requests[userId].Add(DateTime.UtcNow);
+                _storage.Save(userId, DateTime.UtcNow);
                 // New window
                 _currentWindow = window;
                 _counter = 1;
