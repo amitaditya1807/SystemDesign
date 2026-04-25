@@ -32,7 +32,7 @@ namespace RateLimiterDemo.RateLimiter
                 }
                 //Console.WriteLine("userid " + userId);
                 //Console.WriteLine("current window " + _currentWindow.ToString());
-                Console.WriteLine("window " + window.ToString());
+                //Console.WriteLine("window " + window.ToString());
                 // Same window
                 if (_currentWindow == window)
                 {

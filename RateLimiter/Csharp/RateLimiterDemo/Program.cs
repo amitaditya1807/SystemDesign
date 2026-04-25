@@ -33,9 +33,9 @@ namespace RateLimiterDemo
             // Simulate multiple users
             List<string> users = new List<string>
             {
-                "user1",
-                "user2",
-                "user3"
+                "Amit",
+                "Pranshul",
+                "Chandu"
             };
 
             List<Task> tasks = new List<Task>();
@@ -54,7 +54,7 @@ namespace RateLimiterDemo
 
         static async Task SendReq(string userId, RateLimiterService service)
         {
-            for (int i = 1; i <= 15; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 bool allowed = service.HandleRequest(userId);
 
