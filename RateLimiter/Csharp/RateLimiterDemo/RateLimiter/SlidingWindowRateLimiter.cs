@@ -7,14 +7,16 @@ namespace RateLimiterDemo.RateLimiter
     {
         Queue<DateTime> queue = new Queue<DateTime>();
 
-        private readonly int _maxRequests = 1;
-        private readonly int _windowSize = 2;
+        private readonly int _maxRequests;
+        private readonly int _windowSize;
         private readonly InMemoryStorage _storage;
 
         private readonly object _lock = new object();
-        public SlidingWindowRateLimiter(InMemoryStorage storage)
+        public SlidingWindowRateLimiter(InMemoryStorage storage, int maxReq, int windowSize)
         {
             _storage = storage;
+            _maxRequests = maxReq;
+            _windowSize = windowSize;
         }
         public bool AllowRequest(string userId)
         {

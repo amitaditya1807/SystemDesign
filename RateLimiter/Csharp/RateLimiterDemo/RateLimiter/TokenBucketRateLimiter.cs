@@ -11,7 +11,7 @@ namespace RateLimiterDemo.RateLimiter
     public class TokenBucketRateLimiter : IRateLimiter
     {
         private readonly InMemoryStorage _storage;
-        public TokenBucketRateLimiter(InMemoryStorage storage)
+        public TokenBucketRateLimiter(InMemoryStorage storage, int maxReq, int windowSize)
         {
             _storage = storage;
         }

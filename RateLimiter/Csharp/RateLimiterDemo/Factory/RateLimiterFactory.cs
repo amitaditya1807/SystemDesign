@@ -12,21 +12,21 @@ namespace RateLimiterDemo.Factory
 {
     public class RateLimiterFactory
     {
-        public static IRateLimiter Create(RateLimiterType type, InMemoryStorage storage)
+        public static IRateLimiter Create(RateLimiterType type, InMemoryStorage storage, int maxReq, int windowSize)
         {
             switch (type)
             {
                 case RateLimiterType.FixedWindow:
-                    return new FixedWindowRateLimiter(storage);
+                    return new FixedWindowRateLimiter(storage, maxReq, windowSize);
 
                 case RateLimiterType.SlidingWindow:
-                    return new SlidingWindowRateLimiter(storage);
+                    return new SlidingWindowRateLimiter(storage, maxReq, windowSize);
 
                 case RateLimiterType.TokenBucket:
-                    return new TokenBucketRateLimiter(storage);
+                    return new TokenBucketRateLimiter(storage, maxReq, windowSize);
 
                 case RateLimiterType.LeakyBucket:
-                    return new LeakyBucketRateLimiter(storage);
+                    return new LeakyBucketRateLimiter(storage, maxReq, windowSize);
 
                 default:
                     throw new ArgumentException("Invalid Type");

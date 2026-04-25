@@ -8,16 +8,18 @@ namespace RateLimiterDemo.RateLimiter
         private int _counter = 0;
         private long _currentWindow = -1;
 
-        private readonly int _maxRequests = 2;
-        private readonly int _windowSize = 10;
+        private readonly int _maxRequests;
+        private readonly int _windowSize;
         private readonly long _startTime;
         private readonly InMemoryStorage _storage;
 
         private readonly object _lock = new object();
-        public FixedWindowRateLimiter(InMemoryStorage storage) 
+        public FixedWindowRateLimiter(InMemoryStorage storage, int maxReq, int windowSize) 
         {
             _storage = storage;
             _startTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            _maxRequests = maxReq;
+            _windowSize = windowSize;
         }
         public bool AllowRequest(string userId)
         {
