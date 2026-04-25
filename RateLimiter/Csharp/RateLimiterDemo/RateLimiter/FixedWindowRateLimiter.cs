@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RateLimiterDemo.Core.Interfaces;
+﻿using RateLimiterDemo.Core.Interfaces;
 using RateLimiterDemo.Storage;
-using static System.Formats.Asn1.AsnWriter;
 
 namespace RateLimiterDemo.RateLimiter
 {
@@ -15,7 +8,7 @@ namespace RateLimiterDemo.RateLimiter
         private int _counter = 0;
         private long _currentWindow = -1;
 
-        private readonly int _maxRequests = 5;
+        private readonly int _maxRequests = 2;
         private readonly int _windowSize = 10;
         private readonly long _startTime;
         private readonly InMemoryStorage _storage;
@@ -51,8 +44,8 @@ namespace RateLimiterDemo.RateLimiter
                     return true;
                 }
 
-                // New window
                 _storage.Requests[userId].Add(DateTime.UtcNow);
+                // New window
                 _currentWindow = window;
                 _counter = 1;
                 return true;

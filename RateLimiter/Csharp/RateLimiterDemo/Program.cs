@@ -61,7 +61,7 @@ namespace RateLimiterDemo
                 Console.WriteLine($"User: {userId}, Req: {i}, {(allowed ? "Allowed" : "Blocked")}");
 
                 // simulate delay between requests
-                await Task.Delay(900);
+                //await Task.Delay(900);
             }
         }
 
