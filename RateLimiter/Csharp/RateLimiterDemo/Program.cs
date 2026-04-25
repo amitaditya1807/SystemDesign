@@ -16,7 +16,7 @@ namespace RateLimiterDemo
             InMemoryStorage db = InMemoryStorage.GetInstance();
 
             // Create RateLimiter using Factory (Factory)
-            IRateLimiter limiter = RateLimiterFactory.Create(RateLimiterType.FixedWindow, db);
+            IRateLimiter limiter = RateLimiterFactory.Create(RateLimiterType.SlidingWindow, db);
 
             // Create Service
             RateLimiterService service = new RateLimiterService(limiter);
@@ -61,7 +61,7 @@ namespace RateLimiterDemo
                 Console.WriteLine($"User: {userId}, Req: {i}, {(allowed ? "Allowed" : "Blocked")}");
 
                 // simulate delay between requests
-                //await Task.Delay(900);
+                await Task.Delay(1000);
             }
         }
 
