@@ -16,7 +16,7 @@ namespace RateLimiterDemo
             InMemoryStorage db = InMemoryStorage.GetInstance();
 
             // Create RateLimiter using Factory (Factory)
-            IRateLimiter limiter = RateLimiterFactory.Create(RateLimiterType.SlidingWindow, db, 1, 2);
+            IRateLimiter limiter = RateLimiterFactory.Create(RateLimiterType.TokenBucket, db, 5, 2000);
 
             // Create Service
             RateLimiterService service = new RateLimiterService(limiter);
