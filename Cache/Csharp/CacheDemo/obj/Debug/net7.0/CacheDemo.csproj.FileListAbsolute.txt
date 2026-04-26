@@ -1,0 +1,15 @@
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\bin\Debug\net7.0\CacheDemo.exe
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\bin\Debug\net7.0\CacheDemo.deps.json
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\bin\Debug\net7.0\CacheDemo.runtimeconfig.json
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\bin\Debug\net7.0\CacheDemo.dll
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\bin\Debug\net7.0\CacheDemo.pdb
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.csproj.AssemblyReference.cache
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.AssemblyInfoInputs.cache
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.AssemblyInfo.cs
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.csproj.CoreCompileInputs.cache
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.dll
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\refint\CacheDemo.dll
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.pdb
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\CacheDemo.genruntimeconfig.cache
+C:\Users\AMIT KUMAR\OneDrive\Desktop\WorkingDir\SystemDesign\Cache\Csharp\CacheDemo\obj\Debug\net7.0\ref\CacheDemo.dll
