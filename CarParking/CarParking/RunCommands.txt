@@ -1,0 +1,43 @@
+cd '/mnt/c/users/amit kumar/onedrive/desktop/workingdir/'
+
+for docker -
+sudo docker build -t carparking-app .
+docker run -it carparking-app
+
+For k8s -
+Fresh Start -
+minikube start
+
+eval $(minikube docker-env)
+
+docker build --no-cache -t carparking:v1 .
+
+kubectl apply -f deployment.yaml
+
+kubectl get pods -w
+
+
+
+Option 1: Stop app only
+kubectl delete -f deployment.yaml
+
+Option 2: Stop cluster (recommended)
+minikube stop
+
+Option 3: Full reset (clean slate)
+minikube delete
+
+RESTART (after stop)
+minikube start
+
+eval $(minikube docker-env)
+
+kubectl apply -f deployment.yaml
+
+kubectl get pods
+
+commands - 
+kubectl get nodes
+kubectl get pods
+kubectl log <id>
+kubectl rollout restart deployment carparking-deployment

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2D8vf7lGUfsKyCKeG9R5QFaOaCHYVOgUVOCZpLby3NRDlLA2dzN+5wfGevMf6n6fTto4NV66Ke1B9CuxASar6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AMIT KUMAR\\OneDrive\\Desktop\\WorkingDir\\SystemDesign\\CarParking\\CarParking\\CarParking.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AMIT KUMAR\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+  ],
+  "logs": []
+}

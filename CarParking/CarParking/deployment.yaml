@@ -1,0 +1,18 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carparking-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: carparking
+  template:
+    metadata:
+      labels:
+        app: carparking
+    spec:
+      containers:
+      - name: carparking
+        image: carparking
+        imagePullPolicy: Never

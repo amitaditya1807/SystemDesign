@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  carparking:
+    image: ${DOCKER_REGISTRY-}carparking
+    build:
+      context: .
+      dockerfile: Dockerfile
