@@ -10,7 +10,7 @@ namespace CarParking
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to My Car Parking Systemm !!!");
+            Console.WriteLine("Welcome to My Car Parking System !!!");
 
             // 1. Create spots
             var spots = new List<ParkingSpot>

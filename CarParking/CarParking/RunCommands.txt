@@ -10,7 +10,7 @@ minikube start
 
 eval $(minikube docker-env)
 
-docker build --no-cache -t carparking:v1 .
+docker build --no-cache -t carparking:latest .
 
 kubectl apply -f deployment.yaml
 
@@ -41,3 +41,8 @@ kubectl get nodes
 kubectl get pods
 kubectl logs <id>
 kubectl rollout restart deployment carparking-deployment
+
+
+To restart k8s with updated code - 
+docker build -t carparking:v2 . && \
+kubectl set image deployment/carparking-deployment carparking=carparking:v2
