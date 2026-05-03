@@ -39,5 +39,5 @@ kubectl get pods
 commands - 
 kubectl get nodes
 kubectl get pods
-kubectl log <id>
+kubectl logs <id>
 kubectl rollout restart deployment carparking-deployment
